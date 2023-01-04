@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1200px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_Side {
+    position: relative;
+    background: rgb(85, 85, 85);
+    padding: 40px;
+}
+
+
+.profileText .imgP{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgP img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contactInfor {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contactInfor ul{
+    position: relative;
+}
+
+.contactInfor ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contactInfor ul li .icon{
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    width: 30px;
+    margin-right: 8px;
+}
+
+.contactInfor ul li .text{
+    color: #fff;
+    font-weight: 300;
+    
+}
+
+.contactInfor.Skills .text{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    min-width: 100px;
+}
+
+.contactInfor .skill-list li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInfor .icon-star{
+    color: #fff;
+}
+
+.contactInfor .icon-star1 {
+    color: #848c99;
+}
+
+
+.contactInfor .hobby-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contactInfor .icon1{
+    color: #fff;
+    font-size: 18px;
+    width: 30px;
+}
+
+
+.container .right_Side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.name h2{
+    font-size: 50px;
+    font-weight: 300;
+    text-align: start;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 77px 0 75px 0;
+}
+
+.name h2 span{
+    color: #333;
+    font-size: 36px;
+    font-weight: 200;
+    letter-spacing: 7px;
+}
+
+.about {
+    margin-bottom: 25px;
+}
+
+.about .title2 {
+    color: rgb(125, 114, 77);
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.about span {
+    color: #848c99;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.about .name-com-edu {
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+}
+
+.about .position{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.right_Side p{
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.about .edu p{
+    padding-bottom: 20px;;
+}
+
+.left_Side::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 13%;
+    width: 100%;
+    height: 25px;
+    background-color: #fff;
+}
+
+.left_Side::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    width: 100%;
+    height: 25px;
+    background-color: #fff;
+}
+ 
